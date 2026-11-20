@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base :: layout(~{::title}, ~{::section})}">
+<head>
+    <title>Accueil - ChatBot IA</title>
+</head>
+<body>
+<div id="wrapper">
+    <div id="spiderman">
+        <div class="head">
+            <div class="eye-left"></div>
+            <div class="eye-right"></div>
+        </div>
+        <div class="body">
+            <div class="spider"></div>
+            <div class="arm-left"></div>
+            <div class="arm-right"></div>
+        </div>
+        <div class="legs">
+            <div class="boot-left"></div>
+            <div class="boot-right"></div>
+        </div>
+    </div>
+</div>
+<section class="text-center py-5">
+    <h1 class="display-5 fw-bold mb-3">Bienvenue sur votre Assistant IA</h1>
+    <p class="lead text-muted mb-4">
+        Interagissez avec plusieurs modèles d'intelligence artificielle (Mistral, Gemini) depuis une interface unifiée.
+    </p>
+    <div class="d-flex justify-content-center gap-3">
+        <a th:href="@{/connexion}" class="btn btn-primary btn-lg">Se connecter</a>
+    </div>
+</section>
+</body>
+</html>
