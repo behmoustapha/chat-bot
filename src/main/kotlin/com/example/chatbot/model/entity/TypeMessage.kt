@@ -1,4 +1,4 @@
-package c.example.chatbot.model.entity
+package com.example.chatbot.model.entity
 
 enum class TypeMessage {
     SYSTEME,
