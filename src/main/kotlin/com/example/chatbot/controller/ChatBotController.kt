@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping
 @Controller
 class MainController {
 
-    @GetMapping("/")
-    fun accueil(): String {
-        return "utilisateur/acceuil"
-    }
-
+//    @GetMapping("/")
+//    fun accueil(): String {
+//        return "utilisateur/acceuil"
+//    }
+//
     @GetMapping("/connexion")
     fun connexion(): String {
         return "auth/connexion"

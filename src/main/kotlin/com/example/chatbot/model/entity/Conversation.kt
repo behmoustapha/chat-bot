@@ -13,6 +13,8 @@ class Conversation(
     var titre: String? = null,
 
     var dateCreation: LocalDateTime = LocalDateTime.now(),
+    @Column
+    var dateDerniereModification : LocalDateTime = LocalDateTime.now(),
 
     // Association Many-to-One avec ModeleIA (maître de l'association)
     @ManyToOne
